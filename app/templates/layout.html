@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='node_modules/bootstrap/dist/css/bootstrap.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        /* Membuat tombol "Previous" dan "Next" lebih lebar ke sisi kiri dan kanan */
+        .carousel-control-prev,
+        .carousel-control-next {
+            width: 15%;
+            /* Sesuaikan lebar sesuai kebutuhan */
+            margin-left: -10px;
+            /* Geser tombol "Previous" ke kiri */
+            margin-right: -10px;
+            /* Geser tombol "Next" ke kanan */
+        }
+    </style>
+    {% block title %}{% endblock %}
+</head>
+
+<body class="">
+    <!-- <div class="container-xxl bg-white p-0"> -->
+    <div class="row gx-0">
+        <div class="col-lg-3 bg-dark d-none d-lg-block">
+            <a href="index.html"
+                class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
+                <div>
+                    <h1 class="m-0 text-primary text-uppercase" style="letter-spacing: 2px;">HOETH</h1>
+                    <span class="text-white">HEAVEN ON EARTH</span>
+                </div>
+            </a>
+        </div>
+        <div class="col-lg-9">
+            <div class="row gx-0 bg-white d-none d-lg-flex">
+                <div class="col-lg-7 px-5 text-start">
+                    <div class="h-100 d-inline-flex align-items-center py-2 me-4">
+                        <i class="fa fa-envelope text-primary me-2"></i>
+                        <p class="mb-0">pemrograman@web.com</p>
+                    </div>
+                    <div class="h-100 d-inline-flex align-items-center py-2">
+                        <i class="fa fa-phone-alt text-primary me-2"></i>
+                        <p class="mb-0">+012 345 6789</p>
+                    </div>
+                </div>
+                <div class="col-lg-5 px-5 text-end">
+                    <div class="d-inline-flex align-items-center py-2">
+                        <a class="me-3" href=""><i class="fab fa-facebook-f text-primary"></i></a>
+                        <a class="me-3" href=""><i class="fab fa-twitter text-primary"></i></a>
+                        <a class="me-3" href=""><i class="fab fa-linkedin-in text-primary"></i></a>
+                        <a class="me-3" href=""><i class="fab fa-instagram text-primary"></i></a>
+                        <a class="" href=""><i class="fab fa-youtube text-primary"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-3 p-lg-0">
+                <a href="index.html" class="navbar-brand d-block d-lg-none">
+                    <h1 class="m-0 text-primary text-uppercase">Hotelier</h1>
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav mr-auto py-0">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="service.html" class="nav-item nav-link">Services</a>
+                        <a href="room.html" class="nav-item nav-link">Rooms</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false">Pages</a>
+                            <div class="dropdown-menu rounded-0 m-0">
+                                <a href="booking.html" class="dropdown-item">Booking</a>
+                                <a href="team.html" class="dropdown-item">Our Team</a>
+                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <a href="" class="btn btn-primary rounded-0 py-4 px-md-5 d-none d-lg-block">Login<i
+                            class="fa fa-arrow-right ms-3"></i></a>
+                </div>
+            </nav>
+        </div>
+    </div>
+    {% block content %}{% endblock %}
+    <!-- </div> -->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper-base.min.js"
+        integrity="sha384-+JZJ5XJ9yLzgJjJ6kZQJ8yJzJfQzJ6f3J2z3zJvJZg4z5Jz0J8ZQJ8yJzJfQzJ6f"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Poppins', sans-serif;
+}
+
+.primary {
+  color: #E62F3A !important;
+  /* Warna teks */
+  background-color: #E62F3A !important;
+  /* Warna latar belakang */
+  border-color: #E62F3A !important;
+  /* Warna border (jika ada) */
+}
+
+img.w-100 {
+  filter: brightness(0.5) blur(1px);
+  border: none;
+}
+
+.container-fluid {
+  border: none;
+}
+
+.container-inner {
+  border: none;
+}
+
+.container .slide {
+  border: none;
+}
