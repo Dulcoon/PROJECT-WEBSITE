@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block content %}
-<div class="container-fluid p-0">
+<div class="container-fluid p-0" id="home">
   <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner ">
       <div class="carousel-item active  ">
@@ -164,7 +164,7 @@
 
 <!-- room -->
 
-<div class="container-xxl py-5">
+<div class="container-xxl py-5" id="rooms">
   <div class="container">
     <div class="text-center wow fadeInUp" data-wow-delay="0.1s"
       style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
@@ -285,7 +285,7 @@
 
 <!-- Services -->
 
-<div class="container-xxl py-5">
+<div class="container-xxl py-5" id="services">
   <div class="container">
     <div class="text-center wow fadeInUp" data-wow-delay="0.1s"
       style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
@@ -480,12 +480,12 @@
 
 
 <!-- our team -->
-<div class="container-xxl py-5">
+<div class="container-xxl py-5" id="teams">
   <div class="container">
     <div class="text-center wow fadeInUp" data-wow-delay="0.1s"
       style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
-      <h6 class="section-title text-center text-primary text-uppercase">Our Team</h6>
-      <h1 class="mb-5">Explore Our <span class="text-primary text-uppercase">Staffs</span></h1>
+      <h4 class="section-title text-center text-primary text-uppercase">Our Team</h4>
+      <h1 class="display-5 mb-4 fw-bold">Explore Our <span class="text-primary text-uppercase">Staffs</span></h1>
     </div>
     <div class="row g-5">
       <div class="col-lg-3 col-md-5 wow fadeInUp" data-wow-delay="0.1s"
@@ -598,19 +598,19 @@
 <!-- subscribe end -->
 
 <!-- footer -->
-<div class="container-fluid bg-dark text-light footer " data-wow-delay="0.1s"
+<div class="container-fluid bg-dark text-light footer " id="contact"
   style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
   <div class="container pb-5">
     <div class="row g-5">
       <div class="col-md-6 col-lg-4" style="margin-top: 150px;">
         <div class="bg-primary rounded p-4">
-          <a href="index.html">
-            <h1 class="text-white text-uppercase mb-3">HOETH</h1>
+          <a href="#home">
+            <h1 class="text-white text-uppercase mb-3 link-underline link-underline-opacity-0">HOETH</h1>
           </a>
           <p class="text-white mb-0">
-            Download <a class="text-dark fw-medium" href="\"></a>, build a professional website for your hotel business
-            and grab the attention of new
-            visitors upon your site’s launch.
+            <a class="text-dark fw-medium" href="\"></a>Kami adalah tujuan peristirahatan eksklusif yang menawarkan
+            layanan istimewa dan akomodasi
+            berkelas. Nikmati pengalaman luar biasa bersama kami.
           </p>
         </div>
       </div>
@@ -628,21 +628,26 @@
       </div>
       <div class="col-lg-5 col-md-12" style="margin-top: 150px;">
         <div class="row gy-5 g-4">
-          <div class="col-md-6">
+          <div class="col-md-4 mx-4">
             <h6 class="section-title text-start text-primary text-uppercase mb-4">Company</h6>
-            <a class="btn btn-link link-underline link-underline-opacity-0 text-white" href="">About Us</a>
-            <a class="btn btn-link link-underline link-underline-opacity-0 text-white" href="">Contact Us</a>
-            <a class="btn btn-link link-underline link-underline-opacity-0 text-white" href="">Privacy Policy</a>
-            <a class="btn btn-link link-underline link-underline-opacity-0 text-white" href="">Terms &amp; Condition</a>
-            <a class="btn btn-link link-underline link-underline-opacity-0 text-white" href="">Support</a>
+            <a class="btn btn-link link-underline link-underline-opacity-0 text-white" href="#home">Home</a>
+            <a class="btn btn-link link-underline link-underline-opacity-0 text-white" href="#about">About Us</a>
+            <a class="btn btn-link link-underline link-underline-opacity-0 text-white" href="#contact">Contact Us</a>
+            <a class="btn btn-link link-underline link-underline-opacity-0 text-white" href="#rooms">Our Rooms</a>
+            <a class="btn btn-link link-underline link-underline-opacity-0 text-white" href="#teams">Our Teams</a>
           </div>
           <div class="col-md-6">
             <h6 class="section-title text-start text-primary text-uppercase mb-4">Services</h6>
-            <a class="btn btn-link link-underline link-underline-opacity-0 text-white" href="">Food &amp; Restaurant</a>
-            <a class="btn btn-link link-underline link-underline-opacity-0 text-white" href="">Spa &amp; Fitness</a>
-            <a class="btn btn-link link-underline link-underline-opacity-0 text-white" href="">Sports &amp; Gaming</a>
-            <a class="btn btn-link link-underline link-underline-opacity-0 text-white" href="">Event &amp; Party</a>
-            <a class="btn btn-link link-underline link-underline-opacity-0 text-white" href="">GYM &amp; Yoga</a>
+            <a class="btn btn-link link-underline link-underline-opacity-0 text-white" href="#services">Restaurant
+              Reservations</a>
+            <a class="btn btn-link link-underline link-underline-opacity-0 text-white" href="#services">Room Booking</a>
+            <a class="btn btn-link link-underline link-underline-opacity-0 text-white" href="#services">24-Hour Room
+              Service</a>
+            <a class="btn btn-link link-underline link-underline-opacity-0 text-white" href="#services">Spa Services</a>
+            <a class="btn btn-link link-underline link-underline-opacity-0 text-white"
+              href="#services">Transportation</a>
+            <a class="btn btn-link link-underline link-underline-opacity-0 text-white" href="#services">Tourist
+              Activities</a>
           </div>
         </div>
       </div>
@@ -651,15 +656,15 @@
   <div class="container">
     <div class="copyright">
       <div class="row">
-        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-          © <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved.
+        <div class="col-md-6 text-center text-md-start mb-5 mb-md-0">
+          © <a class="border-bottom mb-5" href="#home">hoeth.id</a>, All Right Reserved.
         </div>
         <div class="col-md-6 text-center text-md-end">
-          <div class="footer-menu">
-            <a href="">Home</a>
-            <a href="">Cookies</a>
-            <a href="">Help</a>
-            <a href="">FQAs</a>
+          <div class="footer-menu mb-5">
+            <a href="#" class="link-underline link-underline-opacity-0 text-white">Home</a>
+            <a href="#" class="link-underline link-underline-opacity-0 text-white">Cookies</a>
+            <a href="#" class="link-underline link-underline-opacity-0 text-white">Help</a>
+            <a href="#" class="link-underline link-underline-opacity-0 text-white">FQAs</a>
           </div>
         </div>
       </div>
